@@ -20,6 +20,7 @@
 | 213100251 | M. Lukmanul Hakim       |
 | 213100209 | Medy Febriansyah        |
 | 213100205 | Mei Albert Zendrato     |
+| 213100268 | Nur Amalina Firzanah    |
 | 213100214 | Puja Ayu Ningsih        |
 | 213100206 | Rio Bagor Jaya          |
 | 213100226 | Sofyan Joko Purnomo     |
