@@ -34,8 +34,8 @@
         }
 
         .login-image img {
-            width: 200px;
-            height: auto;
+            width: 250px;
+            
         }
 
         .login-image p {
@@ -46,13 +46,13 @@
         }
 
         .login-form {
-            padding: 40px;
-            width: 300px;
+            padding: 50px;
+            width: 400px;
         }
 
         .login-form h2 {
             margin: 0 0 20px;
-            color: #333;
+            color: white;
             font-family: 'Montserrat', sans-serif;
             font-size: 24px;
         }
@@ -72,7 +72,7 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 14px;
+            font-size: 12px;
             font-family: 'Roboto', sans-serif;
         }
 
@@ -101,20 +101,20 @@
 
         .login-form .remember-me label {
             font-family: 'Roboto', sans-serif;
-            font-size: 14px;
-            color: #333;
+            font-size: 11px;
+            color: white;
         }
 
         .login-form button.login-button {
             width: 100%;
             padding: 10px;
-            background-color: #4CAF50;
+            background-color: white;
             border: none;
             border-radius: 5px;
-            color: white;
-            font-size: 16px;
+            color: #5F9EA0;
+            font-size: 14px;
             cursor: pointer;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Montserrat', sans-serif
         }
 
         .login-form p {
@@ -124,28 +124,35 @@
             font-family: 'Roboto', sans-serif;
             font-size: 14px;
     }
+        .login-container p {
+            font-family: 'Montserrat', sans-serif;
+            color: #009999;
+        }
 </style>
 
 </head>
 <body>
     <div class="login-container">
         <div class="login-image">
-        <p>SISTEM PENCATATAN SAMPAH TPS GO-SARI</p>
+            <p>SISTEM PENCATATAN SAMPAH<br>TPS GO-SARI</p>
             <img src="https://img.freepik.com/premium-vector/simplified-cute-characters-illustrations-websites-application-screens_711010-1022.jpg?w=740" alt="Illustration">
-            <p>Starts for free and get attractive offers</p>
+            <p>Starts for free and get<br>attractive offers</p>
         </div>
         <div class="login-form">
             <h2>Login</h2>
-            <input type="text" placeholder="Username">
-            <input type="password" placeholder="Password">
+            <form action="<?php echo site_url('auth/login') ?>" method="POST"> 
+            <input type="text" name="id_user" placeholder="Id User" class="input-control">
+            <input type="password" name="password" placeholder="Password" class="input-control">
             <div class="remember-me">
-                <input type="checkbox" id="rememberMe">
+
                 <label for="rememberMe">Remember me</label>
             </div>
-            <br></br>
+
             <button class="login-button">Login</button>
+            <div class="error-message"></div>
+            <br></br>
             <div class="social-login">
-                <button style="background-color: #4285F4; color: white;">
+                <button style="background-color: white; color: black;">
                     <img src="https://th.bing.com/th/id/OIP.t1rsr55wqbF2BJfjO81tsQHaHl?rs=1&pid=ImgDetMain" alt="Google">
                     Sign in with Google
                 </button>

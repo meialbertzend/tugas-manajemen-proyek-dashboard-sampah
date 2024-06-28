@@ -4,7 +4,7 @@ class M_user extends CI_Model{
  //$table sebagai tabel yang digunakan, dengan pemanggilannya $this->table
  private $table = 'user';
  //$pk atau Primary Key yang digunakan, dengan pemanggilannya $this->pk
- private $pk = 'no_ktp';
+ private $pk = 'id_user';
  public function GetAll(){
  $this->db->order_by($this->pk, 'desc');
  return $this->db->get($this->table);
